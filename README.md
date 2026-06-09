@@ -2,7 +2,7 @@
 
 A responsive, high-performance web assessment platform designed to evaluate fundamental JavaScript programming concepts in real-time. Built entirely with pure **HTML5, CSS3, and Vanilla JavaScript (ES6+)** to highlight optimized DOM manipulation techniques and clean asynchronous state tracking loops without third-party frameworks.
 
-✨ **Live Deployment Link:** `[Insert your GitHub Pages link here]`
+✨ **Live Deployment Link:** https://paridhi-git-1303.github.io/interactive-quiz-app/
 
 ---
 
