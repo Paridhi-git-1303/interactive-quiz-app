@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class = "quiz-cont">
+        <header class="quizhead">
+            <h1 class="title">JavaScript Foundation Quiz</h1>
+            <div class="timer">Time Left: <span id="time-display">15</span>s</div>
+        </header>
+    
+        <div class="progress-bar">
+            <div id="progress-ind" class="progress-ind"></div>
+        </div>
+
+        <main class="quiz-body">
+            <div id="welcome-screen" class="welcome-screen">
+                <h2 class="welcome-heading">Are you ready to test your JavaScript skills?</h2>
+                <p class="welcome-desc">You have exactly 15 seconds per question.</p>
+                <button id="start-btn" class="action-btn">Start Quiz</button>
+            </div>
+            <div id="quiz-screen" class="quiz-screen hidden">
+                <h2 id="ques-text" class="ques-text">Loading question structure...</h2>
+                <form id="opt-form" class="opt-form"></form>
+                <button id="submit-btn" class="action-btn" disabled>Submit Answer</button>
+            </div>
+
+            <div id="results-screen" class="results-screen hidden">
+                <h2 class="results-heading">Quiz Successfully Submitted!!</h2>
+                <div class="score-card">
+                    <span id="final-score">0</span> / <span id="total-questions">0</span>
+                </div>
+
+                <p id="performance-feedback" class="feedback-text">Evaluating performance metrics...</p>
+                <button id="restart-btn" class="action-btn">Restart Quiz</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

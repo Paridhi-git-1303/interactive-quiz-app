@@ -1,0 +1,219 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcome-screen {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.welcome-heading {
+    color: #f8fafc;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.welcome-desc {
+    color: #ffffff;
+    font-size: 15px;
+    font-style: oblique;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.highlight-text {
+    color: #2dd4bf;
+    font-weight: bold;
+}
+
+body{
+    background: linear-gradient(135deg, #f902b3 0%, #1100ff 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.quiz-cont{
+    background-color: #01000a;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border: 1px solid #334155;
+    overflow: hidden;
+}
+
+.quizhead {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding: 24px;
+    border-bottom: 1px solid #334155;
+}
+
+.title {
+    color: #f8fafc;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.timer {
+    background-color: #ef4444;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.progress-bar {
+    background-color: #334155;
+    height: 6px;
+    width: 100%;
+}
+
+.progress-ind {
+    background-color: #bd61ff;
+    height: 100%;
+    width: 0%;
+    transition: width 0.4s ease;
+}
+
+.quiz-body {
+    padding: 32px;
+}
+
+.ques-text {
+    color: #f1f5f9;
+    font-size: 18px;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.opt-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.option-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #334155;
+    border: 2px solid #475569;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.option-wrapper:hover {
+    background-color: #475569;
+    border-color: #64748b;
+}
+
+.option-wrapper input[type="radio"] {
+    margin-right: 14px;
+    accent-color: purple;
+    transform: scale(1.2);
+}
+
+.option-text {
+    color: #e2e8f0;
+    font-size: 15px;
+    user-select: none;
+}
+
+.option-wrapper.selected {
+    border-color: purple;
+    background-color: rgba(45, 212, 191, 0.1);
+}
+
+.action-btn {
+    width: 100%;
+    background-color: rgb(255, 0, 179);
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.action-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    background: white;
+    color: blue;
+    box-shadow: white;
+}
+
+.action-btn:disabled {
+    background-color: #475569;
+    color: #94a3b8;
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.results-screen {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.results-heading {
+    color: #f8fafc;
+    font-size: 26px;
+    margin-bottom: 16px;
+}
+
+.score-card {
+    display: inline-block;
+    background-color: rgba(45, 212, 191, 0.1);
+    border: 2px solid #2dd4bf;
+    color: #bd61ff;
+    font-size: 36px;
+    font-weight: 800;
+    padding: 12px 32px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.feedback-text {
+    color: #94a3b8;
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.option-wrapper.correct-choice {
+    border-color: #10b981 !important; 
+    background-color: rgba(16, 185, 129, 0.15) !important;
+}
+
+.option-wrapper.correct-choice .option-text {
+    color: #34d399 !important;
+    font-weight: bold;
+}
+
+.option-wrapper.incorrect-choice {
+    border-color: #ef4444 !important; 
+    background-color: rgba(239, 68, 68, 0.15) !important;
+}
+
+.option-wrapper.incorrect-choice .option-text {
+    color: #f87171 !important;
+}
